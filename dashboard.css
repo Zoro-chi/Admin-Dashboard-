@@ -7,17 +7,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+}
 .whole-page{
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
     gap: 3rem;
+    width: 90vw;
+    height: 100vh;
 }
 .main-section{
     display: flex;
     background: yellow;
 }
-.header{
+header.header{
     grid-column: 2;
     background: yellow;
 }
