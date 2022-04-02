@@ -11,12 +11,15 @@
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr 4fr;
+    gap: 3rem;
 }
 .main-section{
     display: flex;
+    background: yellow;
 }
 .header{
     grid-column: 2;
+    background: yellow;
 }
 .dashboard{
     grid-row: 1 / -1;
@@ -31,4 +34,20 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 10px;
+}
+/* _______________________________________________________________________________________________________________ */
+
+aside.dashboard{
+    background: black;
+    color: yellow;
+}
+aside.dashboard a{
+    text-decoration: none;
+}
+aside.dashboard ul li{
+    color: yellow;
+}
+
+article.item-card{
+    border: 2px solid hotpink;
 }
