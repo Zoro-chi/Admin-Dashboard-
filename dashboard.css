@@ -12,6 +12,7 @@ body{
     justify-content: center;
     background: linear-gradient(180deg, black, sandybrown);
     width: 85vw;
+    min-height: 100vh;
 }
 .whole-page{
     display: grid;
@@ -26,7 +27,8 @@ body{
 .main-section{
     display: flex;
     background: rgba(252, 248, 3, 0.493);
-    overflow: hidden;
+    overflow:auto;
+    margin-top: -1.5rem;
 }
 header.header{
     grid-column: 2;
@@ -34,7 +36,7 @@ header.header{
     display: grid;
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 2fr 1.2fr;
-    height: 16vh;
+    height: 14.5vh;
 }
 .search-bar{
     display: grid;
@@ -164,6 +166,8 @@ article.item-card{
     border-left-color: sienna;
     text-align: initial;
     gap: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 article.item-card.top{
     margin-top: 0.5rem;
@@ -182,12 +186,20 @@ input[type="text"]{
     font-weight: 400;
 }
 .announcements{
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+}
+.announcements h2{
+    color: firebrick;
 }
 .announcements div {
     border: 2px solid black;
     padding: 1.3rem;
     margin-bottom: 1rem;
+}
+.announcements div > h4{
+    margin-bottom: 0.5rem;
+    color: firebrick;
+    text-decoration: underline;
 }
 .trend-container{
     display: grid;
