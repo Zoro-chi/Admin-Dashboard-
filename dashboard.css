@@ -11,15 +11,17 @@ body{
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, black, sandybrown);
+    width: 85vw;
 }
 .whole-page{
     display: grid;
     grid-template-rows: 1fr 5fr;
-    grid-template-columns: 1fr 4fr;
-    gap: 1.5rem;
-    width: 90vw;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    width: 85vw;
     height: 100vh;
     font-family: var(--solway);
+    margin-left: 15rem;
 }
 .main-section{
     display: flex;
@@ -163,6 +165,9 @@ article.item-card{
     text-align: initial;
     gap: 1rem;
 }
+article.item-card.top{
+    margin-top: 0.5rem;
+}
 article.item-card h3{
     font-size: 1.5rem;
     font-weight: 900;
@@ -175,4 +180,64 @@ article.item-card p{
 input[type="text"]{
     font-family: cursive;
     font-weight: 400;
+}
+.announcements{
+    padding: 1rem;
+}
+.announcements div {
+    border: 2px solid black;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+}
+.trend-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid black;
+    margin-right: 2rem;
+    justify-content: center;
+}
+.trending > h2{
+    margin-bottom: 1rem;
+}
+.trending img{
+    max-width: 3.5rem;
+    border-radius: 50%;
+}
+.trend-container div{
+    display: flex;
+    flex-direction: column nowrap;
+    margin-bottom: 1rem;
+}
+.trending1 {
+    display: flex;
+    border-bottom: 1px dotted black;
+    border-bottom-width: medium;
+    padding-bottom: 0.3rem;
+}
+.trending1 p{
+    align-self: center;
+    color: firebrick;
+    font-weight: 900;
+}
+.trending2 {
+    display: flex;
+    border-bottom: 1px dotted black;
+    border-bottom-width: medium;
+    padding-bottom: 0.3rem;
+}
+.trending2 p {
+    align-self: center;
+    color: firebrick;
+    font-weight: 900;
+}
+.trending3 {
+    display: flex;
+    border-bottom: 1px dotted black;
+    border-bottom-width: medium;
+    padding-bottom: 0.3rem;
+}
+.trending3 p {
+    align-self: center;
+    color: firebrick;
+    font-weight: 900;
 }
